@@ -64,7 +64,7 @@ node(NODE_MASTER) {
     def PACKER_MANIFEST = "${WORKSPACE}/${PIPELINE_RESOURCES_DIR}/scripts/packer/manifest.json"
     def PACKER_JSON = "${WORKSPACE}/${PIPELINE_RESOURCES_DIR}/scripts/packer/packer.json"
     //repos
-    def GIT_REPO_RESOURCES = 'https://github.com/wso2/aws-pipeline'
+    def GIT_REPO_RESOURCES = 'https://github.com/testuser13407/aws-pipeline.git'
     //mvn remove download logs
     def REMOVE_LOGS = 'org.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn'
     def date = new Date()
@@ -279,7 +279,7 @@ node(NODE_MASTER) {
                 body: "${env.JOB_NAME} build ${env.BUILD_NUMBER} failed in Jenkins. Check console output at $BUILD_URL to view the results.",
                 to: recipient,
                 replyTo: recipient,
-                from: 'noreply@wso2cicd.com'
+                from: 'sushant.singh@exfo.com'
         throw exc
     }
 

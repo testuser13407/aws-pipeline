@@ -31,8 +31,8 @@ node(NODE_MASTER) {
     //Stacks
     def STACK_STAGING = "staging"
     def STACK_PROD = "prod"
-    def STACK_DEV = "dev"
-    def STACK_NETWORK = "network"
+    def STACK_DEV = "development"
+    def STACK_NETWORK = "network1"
     //Constants
     def WUM_CREDS = 'wum_creds'
     def GITHUB_CREDS = 'github_creds'

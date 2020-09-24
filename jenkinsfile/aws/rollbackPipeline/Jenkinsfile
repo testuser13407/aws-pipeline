@@ -64,7 +64,7 @@ node(NODE_MASTER) {
                 STACK_NAME = "staging"
             } else {
                 CF = "${WORKSPACE}/${DEPLOYMENT_DIR}/${PRODUCT}/${env.DeploymentPattern}/cf-dev.yaml"
-                STACK_NAME = "dev"
+                STACK_NAME = "development"
             }
             deployAWS([wso2InstanceType: "${env.WSO2InstanceType}",
                        product         : "${PRODUCT}",

@@ -124,6 +124,8 @@ node(NODE_MASTER) {
                                        dbType           : "${env.DBType}",
                                        region           : "${REGION}",
                                        packerJson       : "${PACKER_JSON}",
+                                       subnetId		    : "${env.SUBNETID}",
+                                       vpcId		    : "${env.VPCID}",
                                        packerManifest   : "${PACKER_MANIFEST}",
                                        amiName          : "${AMI_NAME}",
                                        imageResources   : "${IMAGE_RESOURCES_LOC}"])

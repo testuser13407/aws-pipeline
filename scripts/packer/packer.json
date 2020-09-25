@@ -5,6 +5,8 @@
     "product": "",
     "version": "",
     "name": "BASE",
+    "subnetId": "",
+    "vpcId": "",
     "region": "",
     "buildtime": "{{ isotime \"2006-01-02-1504\" }}"
   },
